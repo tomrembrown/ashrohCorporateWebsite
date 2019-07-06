@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0" role="navigation" id="topmenu">
+    <nav class="navbar navbar-expand-lg p-0 navbar-custom" role="navigation" id="topmenu">
       <div class="container">
         <span class="navbar-brand">Ashroh Enterprises</span>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapseTop">
@@ -8,7 +8,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapseTop">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item px-2">
               <router-link to="/" class="nav-link" active-class="active" exact>HOME</router-link>
             </li>
@@ -40,4 +40,5 @@ export default {
 
 <style lang="scss">
 @import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../scss/navbar.scss'
 </style>

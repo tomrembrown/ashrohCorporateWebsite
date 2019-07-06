@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+
+.navbar-custom {
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar-nav a {
+  font-family: 'Crete Round', serif;
+}
+
+.navbar-custom .nav-link {
+  color: rgb(248, 213, 213);
+}
+
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #e4a479;
+    text-decoration: underline;
+}
+
+.navbar-custom .active {
+  color: #f8572e;
+}

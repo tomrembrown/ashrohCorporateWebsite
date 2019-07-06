@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+
+h2 {
+  color: #f75c1f;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font: 60px "Crete Round", serif;
+}
+
+h2:nth-child(1){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;  
+}
+
+
+h2:nth-child(2){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+} 
+
+@keyframes fade{
+    0%,50% {
+      opacity: 0;
+}
+    100%{
+      opacity: 1;
+  }
+}
