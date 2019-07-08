@@ -6,31 +6,66 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  font: 60px "Crete Round", serif;
+  font: 60px 'Crete Round', serif;
 }
 
-h2:nth-child(1){
-  animation-name: fade;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-direction: alternate-reverse;  
-}
+// Constants
+$FULL_SECONDS: 2;
+$FADE_SECONDS: 1;
+$OVERLAP_SECONDS: 1;
+$NUMBER_HEADERS: 4;
 
+// Calculations
+$totalSeconds: ($FULL_SECONDS + 2*$FADE_SECONDS + $OVERLAP_SECONDS) * $NUMBER_HEADERS;
+$fullPercent: ($FULL_SECONDS / $totalSeconds)*100;
+$fadePercent: ($FADE_SECONDS / $totalSeconds)*100;
+$overlapPercent: ($OVERLAP_SECONDS / $totalSeconds)*100;
+$totalFadePercent: $fadePercent + $overlapPercent;
+$halfFullPercent: $fullPercent / 2;
+$totalPercent: $fullPercent + 2*$fadePercent + $overlapPercent;
 
-h2:nth-child(2){
-  animation-name: fade;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-direction: alternate;
-} 
+@for $i from 1 through $NUMBER_HEADERS {
 
-@keyframes fade{
-    0%,50% {
-      opacity: 0;
-}
-    100%{
-      opacity: 1;
+  h2:nth-child(#{$i}) {
+    animation-name: fade#{$i};
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: #{$totalSeconds + "s"};
+    animation-direction: alternate;
   }
+
+}
+
+@keyframes fade1 {
+  0%, #{$halfFullPercent + "%"} {
+    opacity: 1;
+  }
+  #{$halfFullPercent + $totalFadePercent + "%"},
+  #{(100-$halfFullPercent - $totalFadePercent) + "%"} {
+    opacity: 0;
+  }
+  #{(100 - $halfFullPercent) + "%"}, 100% {
+    opacity: 1;
+  }
+}
+
+@for $i from 2 through $NUMBER_HEADERS {
+
+  $initial: $halfFullPercent + $fadePercent + ($i - 2)* $totalPercent;
+  $startFull: $initial + $overlapPercent + $fadePercent;
+  $endFull: $startFull + $fullPercent;
+  $startNone: $endFull + $overlapPercent + $fadePercent;
+
+  @keyframes fade#{$i} {
+    0%, #{$initial + "%"} {
+      opacity: 0;
+    }
+    #{$startFull + "%"}, #{$endFull + "%"} {
+      opacity: 1;
+    }
+    #{$startNone + "%"}, 100% {
+      opacity: 0;
+    }
+  }
+
 }

@@ -13,13 +13,19 @@
               <router-link to="/" class="nav-link" active-class="active" exact>HOME</router-link>
             </li>
             <li class="nav-item px-2">
+              <router-link to="/vision" class="nav-link" active-class="active">VISION</router-link>
+            </li>
+            <li class="nav-item px-2">
+              <router-link to="/loneliness" class="nav-link" active-class="active">LONELINESS</router-link>
+            </li>
+            <li class="nav-item px-2">
               <router-link to="/about" class="nav-link" active-class="active">ABOUT</router-link>
             </li>
             <li class="nav-item px-2">
-              <router-link to="/values" class="nav-link" active-class="active">VALUES</router-link>
+              <router-link to="/philosophy" class="nav-link" active-class="active">PHILOSOPHY</router-link>
             </li>
             <li class="nav-item px-2">
-              <router-link to="/websites" class="nav-link" active-class="active">WEBSITES</router-link>
+              <router-link to="/business" class="nav-link" active-class="active">BUSINESS</router-link>
             </li>
             <li class="nav-item px-2">
               <router-link to="/contact" class="nav-link" active-class="active">CONTACT</router-link>

@@ -3,21 +3,22 @@
 // Import links
 const Home = () =>
   import(/* webpackChunkName: "Home" */ '../view/components/home/home.vue')
+
+const Vision = () =>
+  import(/* webpackChunkName: "Vision" */ '../view/components/infoPages/vision.vue')
+const Loneliness = () =>
+  import(/* webpackChunkName: "Loneliness" */ '../view/components/infoPages/loneliness.vue')
 const About = () =>
-  import(
-    /* webpackChunkName: "About" */ '../view/components/about/about.vue'
-  )
-const Values = () =>
-  import(
-    /* webpackChunkName: "Values" */ '../view/components/values/values.vue'
-  )
-const Websites = () =>
-  import(
-    /* webpackChunkName: "Websites" */ '../view/components/websites/websites.vue'
-  )
+  import(/* webpackChunkName: "About" */ '../view/components/infoPages/about.vue')
+const Philosophy = () =>
+  import(/* webpackChunkName: "Philosophy" */ '../view/components/infoPages/philosophy.vue')
+const Business = () =>
+  import(/* webpackChunkName: "Business" */ '../view/components/infoPages/business.vue')
+
+
 const Contact = () =>
   import(
-    /* webpackChunkName: "ContactUs" */ '../view/components/contact/contact.vue'
+    /* webpackChunkName: "Contact" */ '../view/components/contact/contact.vue'
   )
 
 // Import General LInks
@@ -28,9 +29,11 @@ const PageNotFound = () =>
 
 export const routes = [
   { path: '', name: 'Home', component: Home },
+  { path: '/vision', name: 'Vision', component: Vision },
+  { path: '/loneliness', name: 'Loneliness', component: Loneliness },
   { path: '/about', name: 'About', component: About },
-  { path: '/values', name: 'Values', component: Values },
-  { path: '/websites', name: 'Websites', component: Websites },
+  { path: '/philosophy', name: 'Philosophy', component: Philosophy },
+  { path: '/business', name: 'Business', component: Business },
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '*', name: 'PageNotFound', component: PageNotFound }
 ]
