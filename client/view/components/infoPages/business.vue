@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Business Model</h2>
   </div>
 </template>
