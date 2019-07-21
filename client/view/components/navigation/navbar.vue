@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-lg p-0 navbar-custom" role="navigation" id="topmenu">
       <div class="container">
-        <span class="navbar-brand">Ashroh Enterprises</span>
+        <span class="navbar-brand"><img src="/img/ashrohLogo.svg" width="80%"></span>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapseTop">
           <span class="navbar-toggler-icon"></span>
         </button>

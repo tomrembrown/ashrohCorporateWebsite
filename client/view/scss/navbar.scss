@@ -1,13 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+@import url(https://fonts.googleapis.com/css?family=Unica+One&display=swap);
 
 .navbar-custom {
   margin-top: 20px;
   background-color: #000;
   color: #fff;
+  font-size: 1.4em;
 }
 
 .navbar-nav a {
-  font-family: 'Crete Round', serif;
+  font-family: 'Unica One', serif;
 }
 
 .navbar-custom .nav-link {
@@ -16,10 +17,10 @@
 
 .navbar-custom .nav-item:focus .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #e4a479;
+    color: #ff8600;
     text-decoration: underline;
 }
 
 .navbar-custom .active {
-  color: #f8572e;
+  color: #f6063b;
 }

@@ -1,19 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+@import url(https://fonts.googleapis.com/css?family=Unica+One&display=swap);
 
 h2 {
-  color: #f75c1f;
+  background: -webkit-linear-gradient(#ff8600,#f6063b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   top: 50%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
   position: absolute;
-  font: 60px 'Crete Round', serif;
+  font: 75px 'Unica One', serif;
 }
 
 // Constants
 $FULL_SECONDS: 2;
 $FADE_SECONDS: 1;
 $OVERLAP_SECONDS: 1;
-$NUMBER_HEADERS: 4;
+$NUMBER_HEADERS: 3;
 
 // Calculations
 $totalSeconds: ($FULL_SECONDS + 2*$FADE_SECONDS + $OVERLAP_SECONDS) * $NUMBER_HEADERS;
