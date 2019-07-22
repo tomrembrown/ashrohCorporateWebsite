@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Unica+One&display=swap);
+@import "variables";
 
 h2 {
-  background: -webkit-linear-gradient(#ff8600,#f6063b);
+  background: -webkit-linear-gradient($topGradientColor,$bottomGradientColor);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10,7 +10,7 @@ h2 {
   text-align: center;
   transform: translate(-50%, -50%);
   position: absolute;
-  font: 75px 'Unica One', serif;
+  font: 75px $titleFontStack;
 }
 
 // Constants

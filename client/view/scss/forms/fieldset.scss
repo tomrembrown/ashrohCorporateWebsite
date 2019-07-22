@@ -1,0 +1,11 @@
+@import "variables";
+
+fieldset {
+	display: block;	
+	padding: 25px 30px 5px;
+	border: none;
+	background: $form-background-color;
+}
+fieldset + fieldset {
+	border-top: $border-line;
+}

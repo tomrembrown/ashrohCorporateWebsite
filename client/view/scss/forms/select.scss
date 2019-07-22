@@ -1,0 +1,83 @@
+@import "variables";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+.select {
+	position: relative;
+  display: block;
+  margin-right: $margin-gap;
+}
+
+.select select {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	height: $input-box-height;
+	padding: 6px 10px;
+	outline: none;
+	border-width: $input-border-width;
+	border-style: solid;
+	border-radius: 0;
+	background: $element-background-color;
+	font: $input-font;
+	color: $element-font-color;
+	appearance: normal;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.select i {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 28px;
+	height: 35px;
+	background: $element-background-color;
+	pointer-events: none;
+}
+.select i:after,
+.select i:before {
+	content: '';
+	position: absolute;
+	right: 10px;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+.select i:after {
+	bottom: 12px;
+	border-top: 4px solid $element-font-color;
+}
+.select i:before {
+	top: 12px;
+	border-bottom: 4px solid $element-font-color;
+}
+.select select {
+	padding-right: 28px;
+}
+.select-multiple select {
+	height: auto;
+}
+
+.select select {
+  border-color: $element-border-color;
+  transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+
+.select:hover select {
+	border-color: $hover-color;
+}
+
+.select select:focus {
+	border-color: $focus-color;
+}
+
+.sky-form [class^="fa-"] {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}

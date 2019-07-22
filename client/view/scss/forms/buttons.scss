@@ -1,0 +1,42 @@
+@import "variables";
+
+.button {
+	position: relative;
+	display: block;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.button {
+	float: right;
+	height: $input-box-height;
+	overflow: hidden;
+	margin: 10px 0 0 20px;
+	padding: 0 25px;
+	outline: none;
+	border: 0;
+	font: $button-font;
+	text-decoration: none;
+	color: $element-background-color;
+	cursor: pointer;
+}
+
+.button {
+	background-color: $primary-button-color;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+}
+.button.button-secondary {
+	background-color: $secondary-button-color;
+}
+
+.button:hover {
+	opacity: 1;
+}
+

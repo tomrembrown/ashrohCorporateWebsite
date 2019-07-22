@@ -1,0 +1,13 @@
+@import "variables";
+
+footer {
+	display: block;
+	padding: 15px 30px 25px;
+	border-top: $border-line;
+	background: $header-footer-background-color;
+}
+footer:after {
+	content: '';
+	display: table;
+	clear: both;
+}

@@ -1,26 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Unica+One&display=swap);
+@import "variables";
 
 .navbar-custom {
   margin-top: 20px;
-  background-color: #000;
-  color: #fff;
+  background-color: $backgroundColor;
+  color: $navbarColor;
   font-size: 1.4em;
 }
 
 .navbar-nav a {
-  font-family: 'Unica One', serif;
+  font-family: $titleFontStack;
 }
 
 .navbar-custom .nav-link {
-  color: rgb(248, 213, 213);
+  color: $navbarColor;
 }
 
 .navbar-custom .nav-item:focus .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #ff8600;
+    color: $topGradientColor;
     text-decoration: underline;
 }
 
 .navbar-custom .active {
-  color: #f6063b;
+  color: $bottomGradientColor;
 }

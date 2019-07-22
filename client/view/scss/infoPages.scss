@@ -1,23 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab);
-
-$side-offset: 20px;
+@import "variables";
 
 h2 {
-  color: #a8fffb;
-  font: 35px 'Raleway', sans-serif;
-  margin: 30px $side-offset;
+  color: $infoHeaderColor;
+  font: 35px $infoHeaderFontStack;
+  margin: $infoHeaderBottomTopMargin $infoSideOffset;
 }
 
 h3 {
-  color: #a8fffb;
-  font: 26px 'Raleway', sans-serif;
-  margin: 30px $side-offset;
+  color: $infoHeaderColor;
+  font: 26px $infoHeaderFontStack;
+  margin: $infoHeaderBottomTopMargin $infoSideOffset;
 }
 
 p {
-  color: #ddfffb;
-  margin: 20px $side-offset;
-  font: 18px 'Roboto Slab', serif;
+  color: $infoParagraphColor;
+  margin: $infoSideOffset $infoParagraphBottomTopMargin;
+  font: 18px $infoParagraphFontStack;
   text-indent: 2em;
 }
 

@@ -1,0 +1,15 @@
+@import "variables";
+
+.note {
+	margin-top: 6px;
+	padding: 0 1px;
+	font-size: $note-font-size;
+	line-height: 15px;
+	color: $note-font-color;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+

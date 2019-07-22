@@ -1,0 +1,41 @@
+// === COLORS ===
+$text-color: #666;
+$header-footer-background-color: rgba(248, 248, 248, 0.9);
+$form-background-color: rgba(255, 255, 255, 0.9);
+$header-text-color: #232323;
+$h3-text-color: #2da5da;
+$element-border-color: #ccc;
+$element-font-color: #404040;
+$note-font-color: #999;
+$element-background-color: #fff;
+$hover-color: #8dc9e5;
+$focus-color: #2da5da;
+$checked-color: $focus-color;
+$h3-color: $focus-color;
+$checkmark-color: $checked-color;
+$primary-button-color: $focus-color;
+$secondary-button-color: #b3b3b3;
+
+
+// === FONTS ===
+$font-stack: "Open Sans", Helvetica, Arial, sans-serif;
+$text-font: 13px/1.55 $font-stack;
+$input-font: 15px/23px $font-stack;
+$button-font: 300 15px/39px $font-stack;
+
+$header-font-size: 27px;
+$h2-font-size: 26px;
+$h3-font-size: 21px;
+$note-font-size: 11px;
+
+$header-font-weight: 450;
+$h2-font-weight:400;
+$h3-font-weight: 300;
+
+// === SIZES ===
+$input-box-height: 39px;
+$margin-gap: 15px;
+
+// === BORDERS ===
+$border-line: 1px solid rgba(0, 0, 0, 0.1);
+$input-border-width: 2px;

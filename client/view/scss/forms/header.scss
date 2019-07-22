@@ -1,0 +1,11 @@
+@import "variables";
+
+header {
+	display: block;
+	padding: 20px 30px;	
+	border-bottom: $border-line;
+	background: $header-footer-background-color;
+	font-size: $header-font-size;
+	font-weight: $header-font-weight;
+	color: $header-text-color;
+}

@@ -35,6 +35,19 @@
       11 database. I have taked or am currently taking courses on 
       Udemy about all these technologies.
     </p>
+    <h3>David Yim, CTO</h3>
+    <p>David has a varied experience in web development. He has 
+      worked in freelance making real estate web applications. 
+      Currently he is working full-time at York University as a web 
+      developer and also completing a degree in computer science at 
+      York. He also has a master's degree in biology as well as being
+      a trained and licensed pharmacist. 
+    </p>
+    <p>David feels passionately about the LGBTQ population of Toronto
+      being able to find services, particularly health services, from
+      professionals knowledgeable about and sensitive to the issues
+      of their community.
+    </p>
   </div>
 </template>
 

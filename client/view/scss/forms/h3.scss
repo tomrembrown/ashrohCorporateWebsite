@@ -1,0 +1,8 @@
+@import "variables";
+
+h3 {
+  font-size: $h3-font-size;
+  font-weight: $h3-font-weight;
+  font-style: italic;
+  color: $h3-color;
+}

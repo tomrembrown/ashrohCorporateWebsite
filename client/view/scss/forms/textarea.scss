@@ -1,0 +1,56 @@
+@import "variables";
+
+.textarea {
+	position: relative;
+  display: block;
+  margin-right: $margin-gap;
+}
+
+.textarea textarea {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	height: $input-box-height;
+	padding: 6px 10px;
+	outline: none;
+	border-width: $input-border-width;
+	border-style: solid;
+	border-radius: 0;
+	background: $element-background-color;
+	font: $input-font;
+	color: $element-font-color;
+	appearance: normal;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.textarea textarea {
+	height: auto;
+	resize: none;
+}
+.textarea-resizable textarea {
+	resize: vertical;	
+}
+.textarea-expandable textarea {
+	height: 39px;
+}
+.textarea-expandable textarea:focus {
+	height: auto;
+}
+
+.textarea textarea {
+  border-color: $element-border-color;
+  transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+
+.textarea:hover textarea {
+	border-color: $hover-color;
+}
+
+.textarea textarea:focus {
+	border-color: $focus-color;
+}
