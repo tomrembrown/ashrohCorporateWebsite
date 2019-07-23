@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 .button {
 	position: relative;
@@ -20,7 +20,7 @@ button::-moz-focus-inner {
 	border: 0;
 	font: $button-font;
 	text-decoration: none;
-	color: $element-background-color;
+	color: $button-text-color;
 	cursor: pointer;
 }
 

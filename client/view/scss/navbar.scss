@@ -4,7 +4,7 @@
   margin-top: 20px;
   background-color: $backgroundColor;
   color: $navbarColor;
-  font-size: 1.4em;
+  font-size: $navbarFontSize;
 }
 
 .navbar-nav a {
@@ -23,4 +23,32 @@
 
 .navbar-custom .active {
   color: $bottomGradientColor;
+}
+
+.navbar-custom button {
+  color: $bottomGradientColor;
+  background-color: $backgroundColor;
+  border: none;
+}
+
+.fa-bars {
+  color: $bottomGradientColor;
+  background-color: $backgroundColor;
+}
+
+.navbar-collapse {
+  overflow: hidden;
+  transition: height 0.35s ease-in-out;
+}
+
+.navbar-collapse.show {
+  height: calc((#{$navbarFontSize} + #{$navbarItemPaddingHeight}) * #{$navbarNumberOfLinks});
+}
+
+.collapse:not(.show) {
+  display: block !important;
+}
+
+.navbar-collapse.collapse {
+  height: 0;
 }

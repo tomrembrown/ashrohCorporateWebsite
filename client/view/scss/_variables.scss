@@ -19,3 +19,52 @@ $infoSideOffset: 20px;
 $infoHeaderBottomTopMargin: 30px;
 $infoParagraphBottomTopMargin: 20px;
 
+// For navbar animation
+$navbarFontSize: 1.4em;
+$navbarItemPaddingHeight: 1rem;
+$navbarNumberOfLinks: 7;
+
+// === For form ===
+
+// === COLORS ===
+$text-color: $bottomGradientColor;
+$header-footer-background-color: $backgroundColor;
+$form-background-color: $backgroundColor;
+$header-text-color: $topGradientColor;
+$h3-text-color: $infoHeaderColor;
+$element-border-color: #ccc;
+$element-font-color: $bottomGradientColor;
+$note-font-color: $topGradientColor;
+$element-background-color: #fff;
+$hover-color: $topGradientColor;
+$focus-color: $bottomGradientColor;
+$checked-color: $focus-color;
+$h3-color: $focus-color;
+$checkmark-color: $checked-color;
+$primary-button-color: $focus-color;
+$secondary-button-color: $navbarColor;
+$button-text-color: $backgroundColor;
+
+
+// === FONTS ===
+$font-stack: "Open Sans", Helvetica, Arial, sans-serif;
+$text-font: 13px/1.55 $font-stack;
+$input-font: 15px/23px $font-stack;
+$button-font: 300 15px/39px $font-stack;
+
+$header-font-size: 27px;
+$h2-font-size: 26px;
+$h3-font-size: 21px;
+$note-font-size: 11px;
+
+$header-font-weight: 450;
+$h2-font-weight:400;
+$h3-font-weight: 300;
+
+// === SIZES ===
+$input-box-height: 39px;
+$margin-gap: 15px;
+
+// === BORDERS ===
+$border-line: 1px solid rgba(0, 0, 0, 0.1);
+$input-border-width: 2px;

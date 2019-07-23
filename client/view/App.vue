@@ -2,7 +2,6 @@
   <div>
     <ar-navbar></ar-navbar>
     <router-view></router-view>
-    <login-modal/>
   </div>
 </template>
 
