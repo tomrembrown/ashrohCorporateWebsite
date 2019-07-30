@@ -1,12 +1,8 @@
 'use strict'
 
 import axios from 'axios'
-import { forms } from '../../../../joint/dataValidation/general/formsAndTable'
 const checkErrorClient = require('../../../../joint/dataValidation/general/checkErrorClient')
-const checkErrorServer = require('../../../../joint/dataValidation/general/checkErrorServer')
-const possibleServerError = require('../../../../joint/dataValidation/general/possibleServerError')
 const checkMandatoryElementsSet = require('../../../../joint/dataValidation/general/checkMandatoryElementsSet')
-const checkVerifyPassword = require('../../../../joint/dataValidation/general/checkVerifyPassword')
 
 const state = {
   currentForm: null,
@@ -65,14 +61,6 @@ const actions = {
       payload.value,
       state.formElements
     )
-    if (thisError == null && possibleServerError(state.currentForm,payload.element)) {
-      thisError = await checkErrorServer(
-        state.currentForm,
-        payload.element,
-        payload.value,
-        state.formElements
-      )
-    }
     commit('removeError', payload.element)
     commit('addError', thisError)
   },
@@ -88,18 +76,6 @@ const actions = {
         return false
       }
 
-      if (state.currentForm === forms.CREATE_ORGANIZATION) {
-
-        const verifyError = checkVerifyPassword(state.formElements)
-        if (verifyError !== null) {
-          commit('removeError', verifyError.element)
-          commit('pushError', verifyError)
-          document.getElementById(verifyError.element).scrollIntoView()
-          return false
-        }
-
-      }
-
       // For some reason sometimes undefined errors appear - remove any
       state.errors = state.errors.filter(error => error !== undefined)
 
@@ -110,20 +86,13 @@ const actions = {
       // Only submit form if no errors
       if (!(state.errors.some(error => error.element.substring(0,formStrLen) === formStr))) {
 
+        console.log('Submitting form now')
         const response = await axios.post(
-          'createRoutesServer/create/' + state.currentForm, state.formElements
+          'generalRoutesServer/sendEmail', state.formElements
         )
-   
+        
         if (response.data.isError) throw new Error(response.data.message)
-
-        if (state.currentForm === forms.CREATE_ORGANIZATION) {
-          // Also, switch to being logged in and store login token
-          commit('login', {
-            loginToken: response.data.loginToken,
-            organizationLogin: state.formElements[forms.CREATE_ORGANIZATION + '__login'],
-            organizationID: response.data.id
-          })
-        }
+        console.log('Submitted form - no errors')
         return true
       } else {
         return false

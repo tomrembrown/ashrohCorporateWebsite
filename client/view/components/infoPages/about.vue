@@ -2,51 +2,30 @@
   <div class="container">
     <h2>About Us</h2>
     <h3>Thomas Brown, CEO</h3>
-    <p>I suffered from anxiety and depression most of my adult life. 
-       Conventional treatments from Western medicine were not helpful 
-       to me. I was told by a psychiatrist I had an incurable anxiety 
-       disorder and would need weekly therapy and daily pharmaceuticals 
-       for the rest of my life. After becoming dissatisfied with 
-       conventional medicine, I sought out alternative treatments. One 
-       of these, an alternative shamanic treatment from the Amazon 
-       jungle, was so helpful it cured 95% of my anxiety and depression. 
-       I now perceive anxiety and depression to be healthy reactions to 
-       a sick society. Our society is fundamentally sick and broken. My 
-       mission in life is to help heal our society. Ashroh Enterprises 
-       is the first step in doing this. This company will rebuild our 
-       lost communities and combat the loneliness epidemic in our 
-       society.
-    </p>
-    <p>I have completed the Entrepreneurship 101 course at MaRS, 
-      during which I interviewed half a dozen potential customers, 
-      and created a lean business model canvas. Also, I am currently 
-      building the MVP (minimum viable product) which will be a 
-      community web portal for the LGBTQ community in Toronto. This 
-      will initially just list organizations and a calendar of events 
-      for Queer Toronto, as well as a 'pink book', a list of health 
-      care professionals knowledgeable about and sensitive to LGBTQ 
-      issues. In my research I discovered that there are other 
-      websites that list some organizations and events for Queer 
-      Toronto, but there isn't a single website that conveniently 
-      lists all of them.
-    </p>
-    <p>I am building the Queer Toronto web portal with vue.js, SCSS, 
-      ES2017, webpack, node.js, express, boostrap 4, and a PostgreSQL 
-      11 database. I have taked or am currently taking courses on 
-      Udemy about all these technologies.
+    <p>Thomas has a diverse set of experience and talents. He has studied physics, public administration, and 
+      web development, winning numerous awards for academic excellence. His five years of experience in programming are largely
+      physics-related. Additionally he has three years of experience working as a policy analyst for the 
+      federal government, and four years providing data and technology support for the federal government.</p>
+    <p>As someone who has personally battled with anxiety and depression, he understands that much of the increase in such
+      diseases today is due to western industrialized society, in many respects, being a bad fit for the well-being of humans. He
+      sees how even though we live in cities surrounded by other people all the time, we are increasingly alienated from each
+      other and from nature. This imbues him with an intense drive and passion to help move society to one which is more 
+      conducive to the well-being and health of humanity - one where people experience greater connection to each other and 
+      to nature.
     </p>
     <h3>David Yim, CTO</h3>
-    <p>David has a varied experience in web development. He has 
-      worked in freelance making real estate web applications. 
-      Currently he is working full-time at York University as a web 
-      developer and also completing a degree in computer science at 
-      York. He also has a master's degree in biology as well as being
-      a trained and licensed pharmacist. 
+    <p>David is a highly intelligent individual who initially studied biology, obtaining a bachelor and masters degrees in 
+      the field. He then studied as, and wrote the exam to become, a licensed pharmacist in Ontario. During these studies
+      he did student work and then consulting work as a web developer. In so doing he found his true passion - developing 
+      software applications. He has now worked full-time at York University as a web developer for three years, and is also 
+      pursuing studies part-time to obtain his bachelor's degree in computer science.
     </p>
-    <p>David feels passionately about the LGBTQ population of Toronto
-      being able to find services, particularly health services, from
-      professionals knowledgeable about and sensitive to the issues
-      of their community.
+    <p>As a compassionate and caring person David empathizes with members of the LGBTQ population in Toronto when they
+      are unable to easily find health care providers knowledgeable and sympathetic about LGBTQ issues, or feel isolated, 
+      or disconnected from communities which they find important, such as religious ones. For this reason he has a strong
+      desire to build tools, the Queer Toronto community web portal and the project Pink Book, which will 
+      enable LGBTQ people of Toronto to locate sensitive and knowledgeable professionals, and to find connection with 
+      communities.
     </p>
   </div>
 </template>

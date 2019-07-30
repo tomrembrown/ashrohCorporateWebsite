@@ -36,19 +36,18 @@
   background-color: $backgroundColor;
 }
 
-.navbar-collapse {
+.smallscreen {
   overflow: hidden;
   transition: height 0.35s ease-in-out;
 }
 
-.navbar-collapse.show {
+.smallscreen.show {
   height: calc((#{$navbarFontSize} + #{$navbarItemPaddingHeight}) * #{$navbarNumberOfLinks});
 }
 
-.collapse:not(.show) {
+.smallscreen.collapse {
+  height: 0;
   display: block !important;
 }
 
-.navbar-collapse.collapse {
-  height: 0;
-}
+

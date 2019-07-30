@@ -16,7 +16,7 @@
     <div v-if="isError" class="note error">
       {{ errorMessage }}
     </div>
-    <div v-if="helpText.length > 0" class="note" :id="idHelp">
+    <div v-else-if="helpText.length > 0" class="note" :id="idHelp">
       {{ helpText }}
     </div>
   </section>

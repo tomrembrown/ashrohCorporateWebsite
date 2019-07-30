@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg p-0 navbar-custom" role="navigation" id="topmenu">
+    <nav class="navbar navbar-expand-xl p-0 navbar-custom" role="navigation" id="topmenu">
       <div class="container">
         <span class="navbar-brand">
           <img src="/img/ashrohLogo.svg" width="80%" />
@@ -17,7 +17,7 @@
           <i class="fas fa-bars"></i>
         </button>
 
-          <div class="navbar-collapse" id="navbarCollapseTop" v-bind:class="{ show: isShown, collapse: !isShown }">
+          <div class="navbar-collapse" id="navbarCollapseTop" v-bind:class="{ smallscreen: isSmall, show: isShown, collapse: !isShown }">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item px-2">
                 <router-link to="/" class="nav-link" active-class="active" exact @click.native="toggleNavbar()">HOME</router-link>
@@ -49,17 +49,40 @@
 </template>
 
 <script>
+const SHOW_NAVBAR_FULL_WIDTH = 1200
+
 export default {
   data() {
     return {
-      isShown: false
+      isShown: false,
+      isSmall: true,
+      window: {
+        width: 0,
+      }
     }
   },
   methods: {
     toggleNavbar() {
-      console.log('In toggleNavbar')
       this.isShown = !this.isShown
+    },
+    handleResize() {
+      if (this.window.width >= SHOW_NAVBAR_FULL_WIDTH && window.innerWidth < SHOW_NAVBAR_FULL_WIDTH) {
+        this.isShown = false
+        this.isSmall = true
+      } else if (this.window.width < SHOW_NAVBAR_FULL_WIDTH && window.innerWidth >= SHOW_NAVBAR_FULL_WIDTH) {
+        this.isShown = true
+        this.isSmall = false
+      }
+      
+      this.window.width = window.innerWidth
     }
+  }, 
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
   }
 }
 </script>
@@ -68,3 +91,4 @@ export default {
 @import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import '../../scss/navbar.scss';
 </style>
+

@@ -2,8 +2,8 @@
   <div class="container">
     <h2>Loneliness in Modern Society</h2>
     <p>Many people are discussing the increase in loneliness and its detrimental effects in modern society. There have
-      been several surveys done indicating that loneliness has increased in recent decades, and demonstrating its
-      negative effects. The paragraphs below discuss some of this research.
+      been several surveys done on the change in rates of loneliness and this impact over recent decades. The paragraphs 
+      below discuss some of this research.
     </p>
     <p>
       In an article written in Havard Business Review by the former Surgeon General of the United States, Vice Admiral 
@@ -30,8 +30,8 @@
       Baya Voce in her TED talk at Salt Lake city in September 2016, titled 'The Simple Cure for Loneliness' calls 
       loneliness a public health crisis.  She states that communities around the world where people live the longest, 
       happiest lives are those where people spend the most time together - whether they are praying together, or 
-      walking together, or doing some other activity together.  These communities prioritize on connection and focus 
-      in their relationships.  The most powerful tool for connection is ritual, which is repeated action plus 
+      walking together, or doing some other activity together.  These communities prioritize social connection and put 
+      a focus on relationships.  The most powerful tool for connection is ritual, which is repeated action plus 
       intention.  She recommends creating rituals with loved ones and friends, such as spending Monday nights together 
       talking.  She describes how ritual acts as your anchor of connection.
     </p>
@@ -46,8 +46,8 @@
       social perimeter by going into self-preservation mode.  The lonelier the brain, the less the activation of 
       empathic parts of the brain in brain studies, since people on the social perimeter are focussed on 
       self-preservation, not the well-being of others.  Much of what is triggered by social isolation is 
-      non-conscious.  Loneliness creates a hypervigilant state, increases defensiveness and depressive symptoms and also
-      increases morning cortisol levels in preparation for a dangerous day as well as decreasing the quality of sleep.  
+      non-conscious.  Loneliness creates a hypervigilant state, increases defensiveness and depressive symptoms, decrease the
+      quality of sleep and also increases morning cortisol levels in preparation for a dangerous day.  
       Social networking does not replace comfort of a friend. According to John Cacioppo, What matters is not the 
       quantity of friends, but the quality of a few relationships.  
     </p>

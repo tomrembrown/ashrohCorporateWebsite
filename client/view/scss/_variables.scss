@@ -24,13 +24,19 @@ $navbarFontSize: 1.4em;
 $navbarItemPaddingHeight: 1rem;
 $navbarNumberOfLinks: 7;
 
+// Font sizes
+$infoH2FontSize: 35px;
+$infoH3FontSize: 26px;
+$infoParagraphFontSize: 18px;
+$infoTextIndent: 2em;
+
 // === For form ===
 
 // === COLORS ===
 $text-color: $bottomGradientColor;
 $header-footer-background-color: $backgroundColor;
 $form-background-color: $backgroundColor;
-$header-text-color: $topGradientColor;
+$header-text-color: $infoHeaderColor;
 $h3-text-color: $infoHeaderColor;
 $element-border-color: #ccc;
 $element-font-color: $bottomGradientColor;
@@ -47,12 +53,13 @@ $button-text-color: $backgroundColor;
 
 
 // === FONTS ===
-$font-stack: "Open Sans", Helvetica, Arial, sans-serif;
+//$font-stack: "Open Sans", Helvetica, Arial, sans-serif;
+$font-stack: $infoHeaderFontStack;
 $text-font: 13px/1.55 $font-stack;
 $input-font: 15px/23px $font-stack;
 $button-font: 300 15px/39px $font-stack;
 
-$header-font-size: 27px;
+$header-font-size: $infoH2FontSize;
 $h2-font-size: 26px;
 $h3-font-size: 21px;
 $note-font-size: 11px;

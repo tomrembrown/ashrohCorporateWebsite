@@ -13,13 +13,9 @@
       The vision, the why, of this company, Ashroh Enterprises, is to fight the 
       loneliness epidemic by helping people build more authentic relationships, 
       those with people they see face to face on a regular basis who they can be 
-      their true selves around, be open, honest, authentic, and sincere with, and 
-      confide in.  Scott Peck, author of The Road Less Travelled, and A Different 
-      Drum, defines real community as one where openness and honesty prevail.  
-      There are no outcasts and everyone is respected.  Community is paradoxically 
-      a place that encourages diversity, it is a place where everyone feels free to 
-      be themselves and does not have to pretend to be someone they are not.  
-      Ashroh Enterprises exists to help people build true community. 
+      their true selves around. This company will foster relationships that are open, 
+      honest, authentic, and sincere. Ashroh Enterprises exists to help people build 
+      true community. 
     </p>
     <p>
       There are many ways to build community and fight loneliness. To begin with, we are 

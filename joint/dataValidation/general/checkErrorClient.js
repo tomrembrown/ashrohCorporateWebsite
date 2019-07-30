@@ -1,7 +1,6 @@
 'use strict'
 
 const constants = require('../../constants')
-const checkVerifyPassword = require('./checkVerifyPassword')
 const { forms } = require('../general/formsAndTable')
 
 const checkErrorClient = (currentForm, element, value, formElements) => {
@@ -22,12 +21,6 @@ const checkErrorClient = (currentForm, element, value, formElements) => {
         constants.minLengths[formElement] +
         ' characters long'
     }
-  }
-
-  // Verify password error
-  if (currentForm === forms.CREATE_ORGANIZATION && formElement === 'verify_password') {
-    const verifyError = checkVerifyPassword(formElements)
-    if (verifyError !== null) return verifyError
   }
 
 }

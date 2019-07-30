@@ -80,7 +80,7 @@ module.exports = {
     port: 8080,
     proxy: [
       {
-        context: ['/readRoutesServer'],
+        context: ['/generalRoutesServer'],
         target: 'http://localhost:' + process.env.PORT,
         secure: false
       }

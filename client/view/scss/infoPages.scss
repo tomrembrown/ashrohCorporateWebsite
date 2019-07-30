@@ -2,21 +2,21 @@
 
 h2 {
   color: $infoHeaderColor;
-  font: 35px $infoHeaderFontStack;
+  font: $infoH2FontSize $infoHeaderFontStack;
   margin: $infoHeaderBottomTopMargin $infoSideOffset;
 }
 
 h3 {
   color: $infoHeaderColor;
-  font: 26px $infoHeaderFontStack;
+  font: $infoH3FontSize $infoHeaderFontStack;
   margin: $infoHeaderBottomTopMargin $infoSideOffset;
 }
 
 p {
   color: $infoParagraphColor;
   margin: $infoSideOffset $infoParagraphBottomTopMargin;
-  font: 18px $infoParagraphFontStack;
-  text-indent: 2em;
+  font: $infoParagraphFontSize $infoParagraphFontStack;
+  text-indent: $infoTextIndent;
 }
 
 
