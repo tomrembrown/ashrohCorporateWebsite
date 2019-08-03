@@ -1,7 +1,7 @@
 <template>
   <section>
     <label class="label" :for="idName">{{ heading }}</label>
-    <label class="textarea textarea-expandable">
+    <label class="textarea" :class="{ 'textarea-expandable': isExpandable }">
       <textarea
         :id="idName"
         :name="idName"
@@ -45,6 +45,10 @@ export default {
     helpText: {
       type: String,
       default: ''
+    },
+    isExpandable: {
+      type: Boolean,
+      default: true
     }
   },
   methods: {

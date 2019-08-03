@@ -86,13 +86,12 @@ const actions = {
       // Only submit form if no errors
       if (!(state.errors.some(error => error.element.substring(0,formStrLen) === formStr))) {
 
-        console.log('Submitting form now')
         const response = await axios.post(
           'generalRoutesServer/sendEmail', state.formElements
         )
-        
+
         if (response.data.isError) throw new Error(response.data.message)
-        console.log('Submitted form - no errors')
+
         return true
       } else {
         return false

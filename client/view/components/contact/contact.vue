@@ -42,6 +42,7 @@
                 placeholder="Message"
                 :idName="formName + '__message'"
                 helpText="Enter the message you want to send"
+                :isExpandable = "false"
               ></ash-textarea>
             </div>
           </div>

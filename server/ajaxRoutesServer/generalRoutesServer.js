@@ -23,10 +23,9 @@ router.post('/sendEmail', asyncMiddleware(async (req, res) => {
 
   objectInputData = processFields(currentForm,objectInputData)
 
-  console.log('About to call sendEmail')
-  sendEmail(objectInputData)
-
-  res.sendStatus(200)
+  sendEmail(objectInputData, function(responseMessage) {
+    res.status(200).send(responseMessage)
+  })
 
 }))
 

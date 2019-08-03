@@ -4,7 +4,7 @@ const { forms } = require('./dataValidation/general/formsAndTable')
 
 let constants = {}
 
-constants.minLengths  = {
+constants.minLengths = {
   name: 3,
   email: 5,
   subject: 5,
