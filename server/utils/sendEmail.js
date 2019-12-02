@@ -8,7 +8,7 @@ const mg = require('nodemailer-mailgun-transport')
 
 const auth = {
   auth: {
-    api_key: 'key-01e530e73325f2b75aecd0a9d3346ef4',
+    api_key: 'key-',
     domain: 'ashroh.com'
   },
   proxy: false
